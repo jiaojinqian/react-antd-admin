@@ -8,6 +8,7 @@ app.get('/', function(req, res) {
   res.sendFile(path.resolve(__dirname, 'dist', 'index.html'))
 })
 
+var publicPath =  path.join(__dirname, 'dist');
 // static
 app.use(express.static(publicPath));
 
